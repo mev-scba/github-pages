@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <script>
+        function guardarDatos() {
+            let usuario = document.getElementById("usuario").value;
+            let nombre = document.getElementById("nombre").value;
+            let juzgado = document.getElementById("juzgado").value;
+            let tribunal = document.getElementById("tribunal").value;
+            let caratula = document.getElementById("caratula").value;
+
+            // Guardar en LocalStorage
+            localStorage.setItem("usuario", usuario);
+            localStorage.setItem("nombre", nombre);
+            localStorage.setItem("juzgado", juzgado);
+            localStorage.setItem("tribunal", tribunal);
+            localStorage.setItem("caratula", caratula);
+
+            // Opción alternativa: Guardar en SessionStorage
+            // sessionStorage.setItem("usuario", usuario);
+            // sessionStorage.setItem("nombre", nombre);
+            // sessionStorage.setItem("juzgado", juzgado);
+            // sessionStorage.setItem("tribunal", tribunal);
+            // sessionStorage.setItem("caratula", caratula);
+
+            alert("Datos guardados correctamente.");
+            window.location.href = "seleccion.html"; // Redirigir a otra página
+        }
+    </script>
+</head>
+<body>
+    <h2>Formulario de Datos</h2>
+    <form onsubmit="guardarDatos(); return false;">
+        <label for="usuario">Usuario:</label>
+        <input type="text" id="usuario" required><br>
+
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" required><br>
+
+        <label for="juagado">Juzgado:</label>
+        <input type="juzgado" id="juzgado" required><br>
+
+        <label for="tribunal">Tribunal y Numero:</label>
+        <input type="tribunal" id="tribunal" required><br>
+
+        <label for="caratula">Caratula:</label>
+        <input type="caratula" id="caratula" required><br>
+
+        <button type="submit">Guardar y Continuar</button>
+    </form>
+</body>
+</html>

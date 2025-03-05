@@ -1,0 +1,207 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html">
+<title>Mesa de Entradas Virtual</title>
+<script type="text/javascript">
+<!--
+
+estilo="estilo.css";
+
+if (screen.availWidth <= 800) {estilo="estilo800600.css"};
+
+document.write("<link rel=\"stylesheet\" href=\"" + estilo + "\" />")
+
+-->
+</script><link rel="stylesheet" href="./tribunal_files/estilo.css">
+<script type="text/javascript" src="./tribunal_files/mev.js.descarga">
+<!--
+//-->
+</script>
+
+<script async="" src="./tribunal_files/js">
+</script> 
+<script> 
+    window.dataLayer = window.dataLayer || []; 
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date()); gtag('config', 'G-H3B7Z18WL6');
+</script>
+
+
+<script type="text/javascript">
+<!--
+  if(navigator.appName == "Netscape"){
+  document.captureEvents(Event.MOUSEMOVE);
+  document.onmousemove = netscapeMouseMove;}
+
+function netscapeMouseMove(e) {
+  document.puntero.y.value = e.clientY + document.body.scrollTop + document.documentElement.scrollTop + 5;
+  document.puntero.x.value = e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - 50;} 
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_showHideLayers() { //v6.0
+  var i,p,v,x,y,obj,args=MM_showHideLayers.arguments;
+  if(navigator.appName == "Netscape")
+  {y = document.puntero.y.value;
+  x = document.puntero.x.value;}
+  else {y = window.event.clientY + document.body.scrollTop + document.documentElement.scrollTop + 5;
+  x = window.event.clientX + document.body.scrollLeft + document.documentElement.scrollLeft - 50;}
+  for (i=0; i<(args.length-2); i+=3) if ((obj=MM_findObj(args[i]))!=null) { v=args[i+2];
+  if (obj.style) { obj=obj.style; v=(v=='show')?'visible':(v=='hide')?'hidden':v; }
+  obj.visibility=v; obj.left=(x + "px"); obj.top=(y + "px");}
+}
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+    eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function MoverDeOrden() {
+    var selectBox = document.getElementById("selectColumna");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    document.location.href = selectedValue;
+}
+
+-->
+</script>
+
+<script>
+  function cargarDatos() {
+      document.getElementById("usuario").innerText = localStorage.getItem("usuario");
+      document.getElementById("nombre").innerText = localStorage.getItem("nombre");
+      document.getElementById("juzgado").innerText = localStorage.getItem("juzgado");
+      document.getElementById("tribunal").innerText = localStorage.getItem("tribunal");
+      document.getElementById("caratula").innerText = localStorage.getItem("caratula");
+  }
+</script>
+
+</head> 
+<body onload="cargarDatos()">
+<link rel="stylesheet" href="./tribunal_files/estilo2014.css">
+
+
+
+<script type="text/javascript">
+<!--
+var estilo = "estilo2014.css";
+if (screen.availWidth <= 1024) {estilo="estilomenor1024.css"};
+document.write("<link rel=\"stylesheet\" href=\"" + estilo + "\" />")
+-->
+</script><link rel="stylesheet" href="./tribunal_files/estilo2014.css">
+
+<table class="pegada"><tbody><tr><td class="fondonuevo" style="text-align:center">
+<script type="text/javascript">
+<!--
+alto = "169px";
+ancho = "1104px";
+if (screen.availWidth <= 1024) {ancho="1000px"; alto="153px"};
+if (screen.availWidth <= 800) {ancho="770px"; alto="117px"};
+// texto = "<img style=\"width: " + ancho + "; height: " + alto + ";\" src=\"frisomev.jpg\" /></a>";
+ texto = "<img src=\"frisomev.jpg\" />";
+document.write(texto);
+
+-->
+
+</script>
+</td></tr></tbody></table><p class="renglonchico">&nbsp;</p><table>
+
+
+
+
+
+</table><table class="marco"><tbody><tr><td><table class="pegada">
+<tbody><tr>
+<td class="fondoazul" width="33%"><p class="whiteleft">
+ 
+UsuarioMEV:&nbsp;<b><span id="usuario"></span></b>&nbsp; 
+    
+    <img src="./tribunal_files/TildeVerde.jpg" width="30px" alt="Usuario apto para solicitar autorizaciones de causas" title="Usuario apto para solicitar autorizaciones de causas"><br><b> Usuario apto para solicitar autorizaciones de causas</b>
+    
+<br> 
+Nombre:&nbsp;<b><span id="nombre"></span></b> 
+
+</p>
+</td>
+<td class="fondoazul" width="34%"><p class="whitecenter">
+</p>
+</td>
+<td class="fondoazul" width="33%"><p class="whiteright"><span id="juzgado"></span> - Penal
+</p>
+</td>
+</tr>
+</tbody></table>
+<!-- <table class="pegada"><tr><td class="fondoazulclaro">
+<p class="center">
+</p></td></tr>
+</table>  -->
+<table class="pegada">
+    <tbody><tr><td class="fondoclaro"><p class="center">Set de Búsqueda:&nbsp;<b>notificaciones</b></p></td></tr>
+        <tr><td class="fondoclaro"><p class="center"><b>Expresión de búsqueda</b>&nbsp;Novedades período: 01/01/2000 - 2/3/2025</p></td></tr>
+        <tr><td><p class="bigcenter"><a style="color: #003063" href="#">Nueva consulta</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: #003063" href="#">Cambiar Jurisdicción</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: #003063" href="https://mev.scba.gov.ar/loguin.asp">Desconectarse</a></p></td></tr>
+</tbody></table>
+    <br>
+    <form action="#" id="FORM2" name="FORM2" method="post">
+    <table class="pegada">
+    <tbody><tr><td class="fondoceleste"><p class="left">Organismos del Set:&nbsp;&nbsp;
+    
+      <span style="font-size: 18px;" id="tribunal"></span>
+            
+    &nbsp;&nbsp;<input id="Consultar" name="Consultar" type="submit" value="Consultar">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+     <input id="Borrar" name="Borrar" type="submit" value="Borrar Expedientes del Set" onclick="return confirmar_borrar "set(¿Está seguro que desea BORRAR ESTE EXPEDIENTE DEL SET ?    CUIDADO !!!    Si el expediente requiere autorización y la quiere recuperar deberá presentar nuevamente una solicitud y esperar que se la vuelvan a autorizar.;)"> 
+    </p></td></tr>
+    </tbody></table> 
+    
+    <table class="pegada">
+	<tbody><tr><td colspan="2" class="lineaazul"><p></p></td></tr>  
+    <tr><td class="left"><p>Ordenar por: 
+    <select style="FONT-SIZE: 10px" onchange="MoverDeOrden()" name="menu1" id="selectColumna">
+    <option value="resultados.asp?pagina=1&amp;pOrden=xCa&amp;pOrdenAD=Asc&amp;pNroColumna=1" selected="">Carátula (ascendente)</option>  
+    <option value="resultados.asp?pagina=1&amp;pOrden=xCa&amp;pOrdenAD=Desc&amp;pNroColumna=1">Carátula (descendente)</option> 
+    <option value="resultados.asp?pagina=1&amp;pOrden=xNc&amp;pOrdenAD=Asc&amp;pNroColumna=2">Nro.Expediente (ascendente)</option>
+    <option value="resultados.asp?pagina=1&amp;pOrden=xNc&amp;pOrdenAD=Desc&amp;pNroColumna=2">Nro.Expediente (descendente)</option>
+    <option value="resultados.asp?pagina=1&amp;pOrden=xFi&amp;pOrdenAD=Asc&amp;pNroColumna=3">Inicio (ascendente)</option>
+    <option value="resultados.asp?pagina=1&amp;pOrden=xFi&amp;pOrdenAD=Desc&amp;pNroColumna=3">Inicio (descendente)</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;</p></td> 
+    <td class="right"><div class="lineaTitulos">   
+    <p class="right">Total expedientes: 1&nbsp;&nbsp;&nbsp;&nbsp; 
+    </p></div></td></tr></tbody></table>
+    
+    <div class="renglon"></div>
+    <table class="pegada">
+    <tbody>  
+    
+    <tr class="fondoceleste">
+    <td colspan="5" nowrap=""><div class="AnchoFijoCaratula">
+    <p class="smallleft"><input type="checkbox" value="251224" name="Marcados">
+        <input type="hidden" value="GAM1258"><a href="#"><span id="caratula"></span>  - </a>
+    </p></div></td></tr>
+    <tr class="fondoceleste">
+	<!--    <TD onmouseover="MM_showHideLayers('Layer4','','show')" onmouseout="MM_showHideLayers('Layer4','','hide')"><div class=OverflowHidden><P class=smallleft>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESPERA OFICIO</P></div></TD> -->    
+    <td><div class="OverflowHidden"><p class="smallleft">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ESPERA OFICIO</p></div></td>        
+                		
+				<td nowrap="" onmouseover="MM_showHideLayers(Layer1;show;)" onmouseout="MM_showHideLayers(Layer1;hide;)"><p class="smallleft">SI&nbsp;-&nbsp;2855&nbsp;-&nbsp;AÑO</p></td>
+			
+	    		<td nowrap="" onmouseover="MM_showHideLayers(&#39;Layer2&#39;,&#39;&#39;,&#39;show&#39;)" onmouseout="MM_showHideLayers(&#39;Layer2&#39;,&#39;&#39;,&#39;hide&#39;)"><p class="smallleft">N° CAUSA</p></td>	    	
+			
+    <td nowrap="" onmouseover="MM_showHideLayers(&#39;Layer3&#39;,&#39;&#39;,&#39;show&#39;)" onmouseout="MM_showHideLayers(&#39;Layer3&#39;,&#39;&#39;,&#39;hide&#39;)"><p class="smallleft">FECHA</p></td>
+    <td><div class="OverflowHidden"><a href="#">
+	<!--    <TD onmouseover="MM_showHideLayers('Layer5','','show')" onmouseout="MM_showHideLayers('Layer5','','hide')"><div class=OverflowHidden><a href="procesales.asp?nidCausa=251224&pidJuzgado=GAM1258 "> -->
+    <p class="smallleft">28/12/2023 - OFICIO AL MINISTERIO DE SEGURIDAD</p></a></div></td></tr>
+	</tbody>
+	</table>
+<div class="fondoazul" id="Layer1" style="Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; COLOR: #003063; POSITION: absolute; TOP: 0px"><p class="white">&nbsp;N° de Receptoria&nbsp;</p></div>
+<div class="fondoazul" id="Layer2" style="Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; COLOR: #003063; POSITION: absolute; TOP: 0px"><p class="white">&nbsp;N° de Expediente&nbsp;</p></div>
+<div class="fondoazul" id="Layer3" style="Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; COLOR: #003063; POSITION: absolute; TOP: 0px"><p class="white">&nbsp;Fecha de Inicio&nbsp;</p></div>
+<div class="fondoazul" id="Layer4" style="Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; COLOR: #003063; POSITION: absolute; TOP: 0px"><p class="white">&nbsp;Estado&nbsp;</p></div>
+<div class="fondoazul" id="Layer5" style="Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; COLOR: #003063; POSITION: absolute; TOP: 0px"><p class="white">&nbsp;Ultimo despacho &gt;&gt;Ampliar&nbsp;</p></div>
+
+<div class="renglon"></div>
+<table class="pegada"><tbody><tr><td class="center"><div class="lineaTitulos">   
+<p class="bluebig"><strong></strong></p><p class="right"><strong>Total expedientes: 1&nbsp;&nbsp;&nbsp;&nbsp;</strong></p> 
+</div></td></tr></tbody></table>
+<div class="renglon"></div>
+<table class="pegada"><tbody><tr><td class="lineaazul"></td></tr></tbody></table></form></td></tr></tbody></table></body></html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html">
+<title>Mesa de Entradas Virtual</title>
+<script type="text/javascript">
+<!--
+
+estilo="estilo.css";
+
+if (screen.availWidth <= 800) {estilo="estilo800600.css"};
+
+document.write("<link rel=\"stylesheet\" href=\"" + estilo + "\" />")
+
+-->
+</script><link rel="stylesheet" href="./notificacion_files/estilo.css">
+<script type="text/javascript" src="./notificacion_files/mev.js.descarga">
+<!--
+//-->
+</script>
+
+<script async="" src="./notificacion_files/js">
+</script> 
+<script> 
+    window.dataLayer = window.dataLayer || []; 
+    function gtag(){dataLayer.push(arguments);} 
+    gtag('js', new Date()); gtag('config', 'G-H3B7Z18WL6');
+</script>
+        
+<script>
+    function cargarDatos() {
+        document.getElementById("usuario").innerText = localStorage.getItem("usuario");
+        document.getElementById("nombre").innerText = localStorage.getItem("nombre");
+        document.getElementById("juzgado").innerText = localStorage.getItem("juzgado");
+        document.getElementById("tribunal").innerText = localStorage.getItem("tribunal");
+    }
+</script>
+
+</head>
+<body onload="cargarDatos()">
+<link rel="stylesheet" href="./notificacion_files/estilo2014.css">
+
+
+
+<script type="text/javascript">
+<!--
+var estilo = "estilo2014.css";
+if (screen.availWidth <= 1024) {estilo="estilomenor1024.css"};
+document.write("<link rel=\"stylesheet\" href=\"" + estilo + "\" />")
+-->
+</script><link rel="stylesheet" href="./notificacion_files/estilo2014.css">
+
+<table class="pegada"><tbody><tr><td class="fondonuevo" style="text-align:center">
+<script type="text/javascript">
+<!--
+alto = "169px";
+ancho = "1104px";
+if (screen.availWidth <= 1024) {ancho="1000px"; alto="153px"};
+if (screen.availWidth <= 800) {ancho="770px"; alto="117px"};
+// texto = "<img style=\"width: " + ancho + "; height: " + alto + ";\" src=\"frisomev.jpg\" /></a>";
+ texto = "<img src=\"frisomev.jpg\" />";
+document.write(texto);
+
+-->
+
+</script>
+</td></tr></tbody></table><p class="renglonchico">&nbsp;</p><table>
+
+
+
+
+
+</table><table class="marco"><tbody><tr><td><table class="pegada">
+<tbody><tr>
+<td class="fondoazul" width="33%"><p class="whiteleft">
+ 
+UsuarioMEV:&nbsp;<b><span id="usuario"></span></b>&nbsp; 
+    
+    <img src="./notificacion_files/TildeVerde.jpg" width="30px" alt="Usuario apto para solicitar autorizaciones de causas" title="Usuario apto para solicitar autorizaciones de causas"><br><b> Usuario apto para solicitar autorizaciones de causas</b>
+    
+<br> 
+Nombre:&nbsp;<b><span id="nombre"></span></b> 
+
+</p>
+</td>
+<td class="fondoazul" width="34%"><p class="whitecenter">
+</p>
+</td>
+<td class="fondoazul" width="33%"><p class="whiteright"><span id="juzgado"></span> - Penal
+</p>
+</td>
+</tr>
+</tbody></table>
+<!-- <table class="pegada"><tr><td class="fondoazulclaro">
+<p class="center">
+</p></td></tr>
+</table>  -->    
+    <table class="pegada">
+        <tbody><tr><td><p class="bigcenter"><a style="color: #003063" href="#"><strong>Modificar Perfil</strong></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;        
+        <a style="color: #003063" href="#"><strong>Consultas a Organismos</strong></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a style="color: #003063" href="#">Ayuda</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a style="color: #003063" href="#">Detalle de Avisos por Mail</a>                
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <a style="color: #003063" href="#">Organizar Mis Sets</a>        
+        
+        <!-- 31/07/2020 aca habia un end if-->        
+        &nbsp;&nbsp;&nbsp;&nbsp;<a style="color: #003063" href="#">Cambiar Jurisdicción</a>&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: #003063" href="#">Desconectarse</a></p></td></tr>
+                           
+            <tr><td><p class="bigcenter">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+		    <a style="color: #003063" href="#">Alta Solicitud AutorizaciónMEV</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+		    <a style="color: #003063" href="#">Consulta de Solicitudes</a>
+            </p></td></tr>            
+        
+    </tbody></table>  
+    <p class="bigcenter" style="color: #003063"><strong></strong></p>
+    
+    <form id="form1" name="form1" onsubmit="return buscar_onclick()" action="/Users/Vaio/Desktop/Tecnicoatura/mev.scba.gov.ar-1740838529-b/mmeevv/mev.scba.gov.ar/tribunal.html" method="post">
+        <input id="OpcionBusqueda" type="hidden" name="OpcionBusqueda" value="4"> 
+        <input id="busca" type="hidden" name="busca" value="1804674">
+        <h3></h3>&nbsp; <h3></h3><h4></h4><table class="pegada">
+
+		     <!-- <tr>    -->  
+                <tbody><tr><td class="fondoclaro" colspan="4"><p class="center">B�squeda por Set</p></td></tr>                
+                
+                    <input id="radio" name="radio" type="hidden">
+	                <input id="caratula" name="caratula" maxlength="122" type="hidden" value="xxx" language="javascript" onclick="return caratula_onclick()" size="40">
+	                <input id="radio" name="radio" type="hidden">
+	                <input id="NCausa" name="NCausa" maxlength="12" type="hidden" value="0" language="javascript" onclick="return NCausa_onclick()" size="20">
+	                <input id="radio" name="radio" type="hidden">
+	                <input id="NInterno" name="NInterno" maxlength="12" type="hidden" value="0" language="javascript" onclick="return NInterno_onclick()" size="20">                                 
+                    <tr><td class="fondoceleste"><p class="right"><input id="radio" value="xSb" name="radio" type="radio" checked="checked"></p></td>                
+                
+
+                <td class="fondoceleste"><p class="left">Buscar en <strong><em>Mis Sets:</em></strong></p></td>
+                <td class="fondoceleste"><p class="left">
+                <select style="width:400px;" size="1" name="Set" onclick="return Set_onclick()">
+                <option value="">Seleccione</option><option value="1804674">notificaciones (374)</option>
+                </select>                
+                </p></td>
+                <td class="fondoceleste"><p class="bigcenter"><a href="#">Cómo consultar los expedientes que requieren autorización ?</a></p></td></tr>
+
+                
+                <tr><td class="fondoclaro" colspan="4"><p class="center">Búsqueda por Novedades de un Set</p></td></tr>
+                   
+                <tr><td class="fondoceleste"><p class="right"><input id="radio" value="xNs" name="radio" type="radio"></p></td>
+                <td class="fondoceleste" colspan="2"><p class="left">Novedades en <strong><em>Mis Sets:</em></strong>
+                &nbsp;(dd/mm/aaaa)&nbsp;&nbsp;</p></td><td class="fondoceleste"></td>                                
+                </tr>
+                <tr>
+                <td class="fondoceleste"></td><td class="fondoceleste"><p class="smallleft">
+                    Desde:&nbsp;&nbsp;<input id="Desde" type="text" name="Desde" size="6" maxlength="10" onkeyup="this.value=formateafecha(this.value);" value="28/2/2025"><br>
+                    Hasta:&nbsp;&nbsp;&nbsp;<input id="Hasta" type="text" name="Hasta" size="6" maxlength="10" onkeyup="this.value=formateafecha(this.value);" value="2/3/2025">
+                </p></td>
+                <td class="fondoceleste"><p class="left"><select style="width:400px;" size="1" name="SetNovedades" onclick="return SetNovedades_onclick()">
+                <option value="">Seleccione</option>
+                    <option value="1804674">notificaciones (374)</option>
+                    </select></p></td>
+                    <td class="fondoceleste"><p></p></td>
+                </tr>
+                    
+            <tr><td class="fondoceleste"></td><td colspan="2" class="lineaazulfina"></td><td class="fondoceleste"></td></tr>
+
+            
+            <tr><td class="fondoclaro" colspan="4"><p class="center">Seleccione el Estado de los Expedientes a considerar, activos, archivados o ambos</p></td></tr>
+
+            <tr>
+            <td class="fondoceleste"><p class="right">--&nbsp;&nbsp;<br><br></p></td>
+            <td class="fondoceleste"><p class="left">Estado del Expediente<br><br></p></td>
+            <td class="fondoceleste"><p class="left">
+              <input id="TipoCausa1" type="radio" value="Ac" name="TipoCausa">Activos
+              <input id="TipoCausa2" type="radio" value="Ar" name="TipoCausa">Archivados
+              <input id="TipoCausa3" type="radio" value="Am" name="TipoCausa" checked="checked">Ambos
+            <br><br></p></td>
+            <td class="fondoceleste"></td>
+            </tr>
+                    
+            <tr>
+            <td><p class="left"><br><input id="reset1" type="reset" value="Borrar" name="reset1"></p></td>
+            <td colspan="2"></td>
+            <td><p class="right"><br><input id="buscar" type="submit" value="Buscar" name="Buscar" accesskey="B"></p></td>
+            </tr>
+        </tbody></table>
+        <table class="pegada"><tbody><tr><td class="lineaazul"></td></tr></tbody></table>
+    </form>
+    </td></tr></tbody></table></body></html>
